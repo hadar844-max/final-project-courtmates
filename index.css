@@ -1,0 +1,68 @@
+/* רקע כללי - אפרסק בהיר מאוד */
+body {
+    background-color: #fff0e6; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333; /* צבע טקסט ברירת מחדל */
+}
+
+/* --- עיצוב חדש לחלק העליון והתחתון (במקום שחור) --- */
+.main-header, .main-footer {
+    background-color: #ffccbc; /* <--- צבע סלמון/ורוד עדין */
+    border-bottom: 1px solid #ffab91; /* פס הפרדה עדין */
+}
+
+/* צבע הטקסט בלוגו ובפוטר - חום כהה במקום לבן */
+.logo-text, .user-text, .main-footer p {
+    color: #4e342e; /* חום כהה - משתלב מהמם עם הכתום */
+}
+
+/* --- תפריט הניווט --- */
+.custom-nav {
+    background-color: #ff6600; /* הכתום החזק נשאר */
+}
+
+/* --- שאר העיצובים (תמונות וכרטיסיות) --- */
+/* עיצוב תמונת הצד - עכשיו גבוהה יותר */
+.sidebar-image {
+    width: 100%;
+    height: 400px; /* <--- קבעתי גובה קבוע וגדול יותר */
+    object-fit: cover; /* חובה! דואג שהתמונה לא תימעך אלא תיחתך יפה */
+    border: 4px solid #fff;
+    border-radius: 8px; /* פינות עגולות שיראה יפה */
+}
+
+
+.game-card, .list-group-item, .card {
+    background-color: #ffffff;
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* כפתורים כתומים */
+.btn-warning {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    color: white;
+}
+.btn-warning:hover {
+    background-color: #cc5200;
+    border-color: #cc5200;
+    color: white;
+}
+
+/* כפתור Quick Filters */
+.card-header.bg-warning {
+    background-color: #ffccbc !important; /* מתאים לצבע החדש */
+    border-bottom: 1px solid #ffab91;
+}
+
+footer {
+    margin-top: auto;
+    border-top: 1px solid #ffab91; /* פס הפרדה עדין למטה */
+}
